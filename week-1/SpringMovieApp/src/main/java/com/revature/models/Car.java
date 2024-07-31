@@ -1,8 +1,6 @@
-package models;
+package com.revature.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.stereotype.Component;
 
 @Data
@@ -13,6 +11,7 @@ public class Car {
     private int id;
     private String make;
     private String model;
+    private int mileage;
+    private int year;
 
-    
 }
