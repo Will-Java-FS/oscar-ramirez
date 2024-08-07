@@ -40,6 +40,7 @@ a8.innerText = tripleEquals("5", "5");
  */
 function doubleEquals(a, b){
 //    code here
+    return a == b
 }
 /**
  * TODO: use the === operator to return the boolean result of an equality comparison for a and b that also checks for
@@ -50,4 +51,5 @@ function doubleEquals(a, b){
  */
 function tripleEquals(a, b){
 //    code here
+    return a === b
 }

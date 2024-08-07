@@ -39,8 +39,8 @@ r10.innerText = isTruthyOrFalsy(undefined);
  */
 function isTruthyOrFalsy(value){
     if(value){
-
+        return true
     }else{
-
+        return false
     }
 }

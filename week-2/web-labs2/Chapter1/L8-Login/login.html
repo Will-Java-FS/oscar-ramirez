@@ -16,7 +16,7 @@
     <br>
     <input id = "passwordInput">
     <br>
-    <button id = "loginButton">login</button>
+    <button id = "loginButton" onclick=login()>login</button>
     <br>
     <script>
         /**
@@ -31,5 +31,16 @@
          * and the password is "password".
          */
     //    code here, inside the script tag
+    let loginMessage = document.getElementById("loginMessage");
+    let button = document.getElementById("loginbutton");
+    button.onclick = login;
+    function login() {
+        let username = document.getElementById("usernameInput").value;
+        let password = document.getElementById("passwordInput").value;
+        loginMessage.innerText = 
+            username == "user" && password == "password" 
+            ? "Welcome, user!"
+            : "Login unsuccessful, please try again";
+    }
     </script>
 </body>

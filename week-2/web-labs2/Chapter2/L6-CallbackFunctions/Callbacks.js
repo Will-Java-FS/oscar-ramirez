@@ -22,6 +22,7 @@ arrForEach(originalArray);
  */
 function arrFilter(arr){
 //    code here
+    return arr.filter(containsSpace);
 }
 /**
  * TODO: return the result of the arr.map method when using the convertToUppercase as a callback function.
@@ -29,6 +30,7 @@ function arrFilter(arr){
  */
 function arrMap(arr){
 //    code here
+    return arr.map(convertToUppercase);
 }
 /**
  * TODO: return the result of the arr.forEach method when using the filterContainsSpace as a callback function.
@@ -37,6 +39,8 @@ function arrMap(arr){
  */
 function arrForEach(arr){
 //    code here
+    consoleLogEachItem(arr);
+
 }
 /**
  * function intended to be used as a callback in array.filter

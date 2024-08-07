@@ -9,6 +9,8 @@ button.onclick = setImageSrc;
  */
 function setImageSrc(){
 //    code here
+    image.src = document.getElementById("input").value;
+
 }
 /**
  * Did you notice that the variables at the top of the script were declared with 'let' instead of 'var'? That's

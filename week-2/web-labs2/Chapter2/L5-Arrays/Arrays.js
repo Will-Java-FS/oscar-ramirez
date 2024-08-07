@@ -41,14 +41,17 @@ function updatePop(){
  * @param item a new value
  */
 function arrPush(item){
+    arr.push(item);
 }
 /**
  * TODO: pop a value from the arr array.
  */
 function arrPop(){
+    arr.pop();
 }
 /**
  * TODO: return the length of arr
  */
 function arrLength(){
+    return arr.length;
 }
