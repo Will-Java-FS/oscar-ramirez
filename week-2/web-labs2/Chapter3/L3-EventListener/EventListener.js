@@ -25,7 +25,10 @@ reset.addEventListener("click", resetText);
  */
 
 //code here
-
+button1.addEventListener("click", updateTextOnButton1Click);
+button1.addEventListener("click", updateTextOnEitherButtonClick);
+button2.addEventListener("click", updateTextOnButton2Click);
+button2.addEventListener("click", updateTextOnEitherButtonClick);
 
 
 
