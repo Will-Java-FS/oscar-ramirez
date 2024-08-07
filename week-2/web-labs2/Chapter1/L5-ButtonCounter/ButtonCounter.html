@@ -10,7 +10,7 @@
     </style>
 </head>
 <body>
-<h1>Button counter</h1>
+<h1>Button Counter</h1>
 <p id = "count">0</p>
 <button id = "button">click me</button>
 <script>
@@ -22,6 +22,13 @@
    * representing the current value in your code.
    */
   var currentCount = 0;
+  var button = document.getElementById("button");
+  var count = document.getElementById("count");
+  button.onclick = countClicks;
+  function countClicks() {
+    currentCount = currentCount + 1;
+    count.innerText = "You're clicked the button " + currentCount + " time(s).";
+  }
 </script>
 </body>
 </html>
