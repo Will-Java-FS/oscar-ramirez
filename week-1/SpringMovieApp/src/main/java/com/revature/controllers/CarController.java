@@ -19,7 +19,6 @@ public class CarController {
         c.setModel("Focus");
         c.setMileage(0);
         c.setYear(2023);
-
         return c;
     }
 
@@ -28,4 +27,5 @@ public class CarController {
         System.out.println(c);
         return c;
     }
+
 }

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.revature</groupId>
-	<artifactId>SpringCarApp</artifactId>
+	<artifactId>SpringMovieApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringCarApp</name>
 	<description>Demo project for Spring Boot</description>

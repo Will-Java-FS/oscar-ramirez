@@ -13,5 +13,4 @@ public class Car {
     private String model;
     private int mileage;
     private int year;
-
 }
