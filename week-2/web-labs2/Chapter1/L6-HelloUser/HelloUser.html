@@ -12,7 +12,7 @@
 <body>
     <h1 id = "text">enter your name:</h1>
     <input id = "input">
-    <button id = "submit">say hello</button>
+    <button onclick=sayHello() id = "submit">say hello</button>
     <br>
     <a href = "https://www.w3schools.com/jsref/prop_text_value.asp">
         https://www.w3schools.com/jsref/prop_text_value.asp</a>
@@ -30,6 +30,14 @@
          * with "hello, {name}", where {name} was retrieved from the current text in the input box. Remember that
          * Strings can be concatenated with the + symbol.
          */
+        var text = document.getElementById("text");
+        var button = document.getElementById("submit");
+
+        function sayHello() {
+            var name = document.getElementById("input").value;
+            text.innerText = "Hello, " + name + " :)";
+        }
     </script>
+    
 </body>
 </html>
