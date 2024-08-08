@@ -21,3 +21,17 @@
  * After retrieving that image, you should append a new img element, which should use the image download_url as its src.
  * (the 'url' property doesn't link directly to the image, but 'download_url' does)
  */
+
+let number = parseInt(document.getElementById("input").value);
+let button = document.getElementById("button");
+let div = document.getElementById("content");
+let input = document.getElementById("input");
+let img = document.createElement("img");
+button.onclick = getImage;
+
+async function getImage() {
+    let HTTPResponse = await fetch("https://picsum.photos/id/" + input.value + "/info");
+    let responseObject = await HTTPResponse.json();
+    img.src = responseObject.download_url;
+    div.appendChild(img);
+}

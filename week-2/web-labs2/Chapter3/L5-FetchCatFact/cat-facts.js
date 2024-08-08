@@ -30,4 +30,6 @@ async function getFact(){
     let responseObject = await HTTPResponse.json();
     //logging the http response to the console
     console.log(responseObject);
+
+    content.innerText = responseObject.fact;
 }
