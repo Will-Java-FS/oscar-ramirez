@@ -20,8 +20,8 @@ button.addEventListener("click", countdown);
  * TODO: add async & await to this function, then verify that the page is able to display "Success!"
  */
 async function countdown() {
-    let value = await getPromise();
-    text.innerText = value;
+    // let value = 
+    text.innerText = await getPromise();
 }
 /**
  * This function returns a new Promise. A Promise is a value that might exist in the future, but takes
