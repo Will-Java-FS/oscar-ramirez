@@ -108,9 +108,7 @@
   - ``` let dog: 'beagle' | 'pug';```
   - this is just the name of a variable, using 'dog' as a type will produce an error
 - With Alias:
-  - ```type dog = 'beagle' | 'pug';
-  let dog1: dog = 'beagle';
-  let dog2: dog = 'pug';```
+  - ```type dog = 'beagle' | 'pug';  let dog1: dog = 'beagle';  let dog2: dog = 'pug';```
   
 ### Interfaces
 - Interfaces are similar to aliases, except they only apply to object types
