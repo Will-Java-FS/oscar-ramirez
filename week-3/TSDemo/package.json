@@ -1,0 +1,24 @@
+{
+  "name": "tsdemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dest/basics.js",
+    "start:movie": "node dest/movie.js",
+    "start:basic": "node dest/basicClass.js",
+    "start:character": "node dest/characterSolution.js",
+    "start:dnd": "node dest/character.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "tsdemo": "file:"
+  }
+}

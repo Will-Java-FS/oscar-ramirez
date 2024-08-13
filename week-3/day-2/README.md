@@ -1,3 +1,5 @@
+# TypeScript Intermediate
+
 ## Classes
 
 - A TypeSCript class is a blueprint for creating objects and encapsulating dat aand behavior
@@ -155,3 +157,59 @@ Function printToConsole( s:string) {
 }
 DoSomething(printToConsole);
 ```
+
+# TypeScript Advanced
+
+## As Const
+- Typescript 3.4 introduced a new construct for literal values called 'const assertions'
+- It is a syntax type assertion with 'const' in place of the type name
+- When we construct new literal expressions with const assertions, we can tell the language that:
+    - No literal types in taht expression should be widened (meaning no going from "hello" to string)
+    - Object literals get readonly properties
+    - Array literals become readonly tuples
+- This is useful when mixing object literals
+
+```
+const MODE = {
+    CREATE: "CREATE",
+    EDIT: "EDIT"
+} as const;
+
+same as
+
+const MODE: {
+    readonly CREATE: "CREATE";
+    readonly EDIT: "EDIT";
+} = {
+    CREATE: "CREATE",
+    EDIT: "EDIT"
+};
+```
+
+## Type Guards
+- Type guards are special constructs that allow yout o narrow down the type of variablewtihin a specific scope
+- They help ensure that avariable is of a certain type before performing operations on it
+    - This helps prevent runtime errors
+- For example, if we have a variable that can be a number or a string, we need to know which one it is before we can perform operations on it
+
+```
+Type Demo = string | number;
+
+Function doSomething(demo: Demo) {
+    if (typeof demo === 'string') {
+        //do something with string
+    } else {
+        //do something else with number
+    }
+}
+```
+
+## Interface vs Type
+Interface
+- **Declaration merging - TS compiler merges 2 or more interfaces that share the same name into only 1 declaration**
+- Can be extended and implemented
+
+Type
+- **Cannot be extended**
+- Intersection - allows us to combine multiple types into a single type using the '&' keyword
+- Union types - allows us to create a new type that accepts a value of one or more types
