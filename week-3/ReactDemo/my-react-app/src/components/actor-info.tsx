@@ -4,7 +4,7 @@
  * @returns 
  */
 
-export default function Actor(props: {name: string, age: number, worth: number}) {
+export default function Actor(props: { name: string, age: number, worth: number }) {
 
     const name = props.name;
     const age = props.age;

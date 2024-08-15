@@ -13,7 +13,7 @@ export default function ContactForm() {
 
     return (<>
         <h3>Request a follow-up email</h3>
-        <input type="text" ref={emailInput}/>
+        <input type="text" ref={emailInput} />
         <button onClick={sendEmail}>Email Me</button>
     </>)
 }
