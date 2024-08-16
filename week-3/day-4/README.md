@@ -52,7 +52,9 @@ class MyComponent extends React.Component {
 What does Context allow us to do?
 - Pass data from distant parent components without needing to send props at every level
 - Avoid prop drilling
+
 (T/F) Controlled components manage their own states and behavior themselves
 - False
+  
 Refs are used when you want to change the value of a child component without using...?
 - props or state
