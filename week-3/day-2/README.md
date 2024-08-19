@@ -46,7 +46,7 @@ Console.log(createPair<string, number>('Nancy', 36));
 
 ## WDS Demo
 ```
-function getFirstElement<ElementType,>(array: ElementType[]) {
+function getFirstElement<ElementType>(array: ElementType[]) {
     return array[0];
 }
 
@@ -75,7 +75,7 @@ type UserResponse = ApiResponse<{ name: string; age: number}> = {
 ```
 
 ## Casting
-- THere are times when it is necessary to override the type of a variable
+- There are times when it is necessary to override the type of a variable
 - Casting is the process of overriding a type
 - Casting is done using the 'as' keyword or with <>, which directly changes the type of the given variable
 - NOTE: casting does not actually change the type of data within the variable!!!
@@ -92,8 +92,8 @@ console.log((<string>x).length);
 
 ## Utility Types
 - TypeScript provides several utility types to help facilitate common type transformations
-- Utilities are vailable globally
-- **Partial** - changes all the properties in an obect to be optional
+- Utilities are available globally
+- **Partial** - changes all the properties in an object to be optional
 - **Required** - changes all the properties in an object to be required
 - **Record** - a shortcut to defining an object type with a specific key type and value type
 
@@ -142,7 +142,7 @@ Function demo(target) {
 ```
 
 ## Functions
-- Functinos are the basic biuilding block of applications
+- Functions are the basic building block of applications
 - The simplest way to describe a function si with a function type expression (similar to arrow functions)
 - '(a: string) => void' means a function with 1 parameter, named a, of type - string, that does not have a return value
 - Parameter names are required
@@ -164,7 +164,7 @@ DoSomething(printToConsole);
 - Typescript 3.4 introduced a new construct for literal values called 'const assertions'
 - It is a syntax type assertion with 'const' in place of the type name
 - When we construct new literal expressions with const assertions, we can tell the language that:
-    - No literal types in taht expression should be widened (meaning no going from "hello" to string)
+    - No literal types in that expression should be widened (meaning no going from "hello" to string)
     - Object literals get readonly properties
     - Array literals become readonly tuples
 - This is useful when mixing object literals
@@ -187,7 +187,7 @@ const MODE: {
 ```
 
 ## Type Guards
-- Type guards are special constructs that allow yout o narrow down the type of variablewtihin a specific scope
+- Type guards are special constructs that allow you to narrow down the type of variable within a specific scope
 - They help ensure that avariable is of a certain type before performing operations on it
     - This helps prevent runtime errors
 - For example, if we have a variable that can be a number or a string, we need to know which one it is before we can perform operations on it
