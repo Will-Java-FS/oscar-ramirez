@@ -2,7 +2,7 @@
 
 ## What is React?
 - React is a JS library (developed by facebook) of UI components that simplifies building user interfaces
-- React code can be directly wirtten in HTML. However, you need npm(node package manager) and Node.js installed
+- React code can be directly written in HTML. However, you need npm(node package manager) and Node.js installed
 - Sometimes referred to as a frontend JS framework
 - React creates a virtual DOM (document object model) in memory to do all of the necessary manipulation before making changes in the browser DOM
     - React only changes what needs to be changed
@@ -26,7 +26,7 @@
 - JSX stands for JavaScript XML
 - It is a syntax extension for JS that is commonly used with React to describe what the UI should look like
 - Allows developers to write HTML-like code directly within JavaScript
-- THis makes it easier to crete and visualize the structure of components in React application
+- This makes it easier to crete and visualize the structure of components in React application
 - You may also see TSX which stands for TypeScript XML and functions similarly
 
 ## TypeScript with React
@@ -56,22 +56,22 @@
 **Function Component**
 - More common
 - JS functions
-- May or may not receieve dat as parameters
-- Can be called using the name of the funciton or by using the functional component method
+- May or may not receieve data as parameters
+- Can be called using the name of the funtion or by using the functional component method
 - Fewer features than class-components (no lifecycle functions)
 ```
-function Somthing() {
+function Something() {
     return (<h1>Header</h1>);
 }
 ```
 
 ## Rendering
-- With traditional JS and HTML, the browser DOM is updated often and can be costly when t comes to performance
+- With traditional JS and HTML, the browser DOM is updated often and can be costly when it comes to performance
 - React renders a web page using a virtual DOM (document object model)
 - React generates virtual DOM objects and only updates the browser DOM when it is absolutely necessary
 - The Virtual DOM is lightweight and is updated with every change
 - React then decides when it is most efficient to make updates to the real DOM
-- This update process is known as 'reconcilition'
+- This update process is known as 'reconciliation'
 
 ## Props & State
 - Components can be nested in other components (referred to as parent and child components)
@@ -86,10 +86,10 @@ function Somthing() {
 - React has a number of built-in hooks or you can build your own
 
 ## State Hook
-- State lets a component 'remember' information usch as user input
+- State lets a component 'remember' information such as user input
     - For ex: a form component can use state to store the selected image index
-    - When the selected image index chnges, we can use the state to reflect some changes on the page
-- The 'useState()' hook return s a pair: the current state value and a function that lets you update it
+    - When the selected image index changes, we can use the state to reflect some changes on the page
+- The 'useState()' hook returns a pair: the current state value and a function that lets you update it
 - To add state to a component, use:
 ```
 Function ImageGallery() {
@@ -99,9 +99,9 @@ Function ImageGallery() {
 
 ## Context Hook
 - Context hooks let a component recieve information from distant parents without passing it as props
-- This makes it possible to pass data as global data with passing props down in a component tree
+- This makes it possible to pass data as global data without passing props down in a component tree
     - Note: this does not actually make the data global, it just behaves as such
-- Use the function 'useContext()' to reac and subscribe to a context
+- Use the function 'useContext()' to read and subscribe to a context
 ```
 Function Button() {
     const theme = useContext(ThemeContext);
@@ -113,7 +113,7 @@ Function Button() {
 - Unlike with state, updating a ref does NOT re-render a component
 - These are useful when working with non-React systems (such as built-in browser APIs)
 - useRef() declares a ref and can be used to hold any value, but most often holds a DOM node
-- 'useImperativeHandle()' lets you customuze the ref exposed by your component (very rarely used)
+- 'useImperativeHandle()' lets you customize the ref exposed by your component (very rarely used)
 ```
 Function Form() {
     const inputRef = useRef(null);
@@ -123,7 +123,7 @@ Function Form() {
 ## Effect Hook
 - Effects let a component connect to and synchronize with external systems
 - This includes dealing wtih things like the network, browser DOM, animations, videos, etc
-- useEffect() connects a component to a n external system
+- useEffect() connects a component to an external system
 ```
 Function CharRoom({roomId}) {
     useEffect(() => { 
@@ -145,9 +145,9 @@ Function CharRoom({roomId}) {
 - Parent component -> (data) -> Child component -> (update DOM) -> Parent component
 
 ## Lists & Keys
-- In React, we render lists with come type of loop
+- In React, we render lists with some type of loop
 - Most often we use the JS 'map()' array method
-- A key is a specific attribute that react uses while rendering collection sof elements
+- A key is a specific attribute that react uses while rendering collections of elements
 - Keys help react identify which items have been changed, added, or removed (affecting the DOM reconciliation process)
 - Keys MUST be unique among sibling elements, but they can be duplicated globally
 - In this example, we create a list with 'id' acting as the keys
@@ -211,14 +211,14 @@ const GroceryList = () => {
 
 ## Immutability
 - In React, Immutability is crucial for state updates
-- Immurability is a concept that ensures component states are not modified directly
+- Immutability is a concept that ensures component states are not modified directly
 - Without immutability practices, components fail to trigger expected re-renders
 - Objects are identified by reference, not by their values
 - Instead of directly modifying the state, we create new objects, incorporate the desired changes, and set the component's state using that new object
     - This ensures that the proper state updates
 
 ## Lifting State
-- Thanks to one-way data flow, aprents can pass props to child components as read-only
+- Thanks to one-way data flow, parents can pass props to child components as read-only
 - Props are used to handle data that is not expeceted to be changed by the component
 - By lifting up the state, we can make the state of the parent component as a single source of truth and pass the data of the parent to its children
 - This is helpful when the data in parent and child components is not in sync
@@ -227,7 +227,6 @@ const GroceryList = () => {
 - Just like HTML DOM events, React can perform actions based on user events
 - React has the same events as HTML (click, change, mouseover, etc)
 - Event names in JSX use camelCase and the event handler is passed in as a JS reference
-- React event handlers are written inside curly braces
 - React event handlers are written inside curly braces
 - We can also pass arguments to event handlers using an arrow function
 
