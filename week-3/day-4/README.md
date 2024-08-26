@@ -16,7 +16,7 @@ Controlled
 - A parent component manages its own state and passes the new values as props to the controlled component
 
 Uncontrolled
-- Uncontrolled components are the ones having control of their own state and maange the behaviors themselves
+- Uncontrolled components are the ones having control of their own state and manage the behaviors themselves
 - These are not controlled by the React state and are handled by the DOM
 - To access any value that has been entered, we get help from refs
 - EX: a file input cannot be controlled since this depends on the browser

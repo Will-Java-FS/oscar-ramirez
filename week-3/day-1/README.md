@@ -2,21 +2,21 @@
 
 ### Key Features of Typescript
 **Static Typing**: you can specify types for variables, function parameters, and return values, allowing the system to catch errors at compile time
-**Readability**: type definitions ake the code easier to read and understand
+**Readability**: type definitions make the code easier to read and understand
 **Type Inference**: Typescript can infer types based on how you write your code, reducing the need for explicit type annotations
 **Interfaces and Classes**: TypeScript supports interfaces and classes, making it easier to write object-oriented code
 **Advanced Features**: TypeScript supports OOP features like generics, decorators, union types, intersection types, etc.
 
 ### Java Script vs TypeScript
 **JS**
-- Dynamically types
+- Dynamically typed
 - Lacks compile-time error checking based on types
 - More flexible with less strict syntax requirements
 - File types end with .js
 - Does not support interfaces
 
 **TS**
-- Statically types
+- Statically typed
 - Provides compile
 - Time type checking, reducing runtime errors
 - Offers modern ECMAScript features along with TypeScript-specific syntax
@@ -79,11 +79,11 @@
   - Number - whoel numbers and floating point values
   - String - text values like "Hello, TypeScript!"
 - There are also 2 less common primitives used in later versions
-  - Bigint - whole numbers nad floating point values, but allows for larger negative and positive values than Number
+  - Bigint - whole numbers andd floating point values, but allows for larger negative and positive values than Number
   - Symbol - used to create a globally unique identifier (GUID)
   
 ### Special types
-- Specialtypes may not refer to any specific type of data
+- Special types may not refer to any specific type of data
 - Any - this type disables type checking and allows all types to be Used
   - 'any' will not provide type safety and should be avoided
 - Unknown - this is a similar but safer alternative to 'any'
@@ -101,9 +101,9 @@
 
 ### Type aliases
 - Type aliases allow for defining types with a custom name (aka an alias)
-- Alises can make code more readable by providing meaningful names for complex types
-- Alases use the type keyword followed by the alias you want to provide
-- In this example, we can use fdog anywhere in our code as if it were a primitive type
+- Aliases can make code more readable by providing meaningful names for complex types
+- Aliases use the type keyword followed by the alias you want to provide
+- In this example, we can use dog anywhere in our code as if it were a primitive type
 - Without Alias:
   - ``` let dog: 'beagle' | 'pug';```
   - this is just the name of a variable, using 'dog' as a type will produce an error
@@ -123,7 +123,7 @@
 ### Tuples
 - Tuples are typed ararys with a pre-defined length and type for each index
 - Tuples allow each element in the array to be a known type of value
-- It is also a good practice to ake tples read only
+- It is also a good practice to make tuples read only
 - If we want to add another item to the tuple we can use the push function to add another item, but there will not be any type safety
 
 ### String enums
